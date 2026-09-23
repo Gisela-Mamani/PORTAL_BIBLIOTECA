@@ -1,1 +1,34 @@
+{% extends "base.html" %}
 
+{% block title %}Libros - Portal de Biblioteca{% endblock %}
+
+{% block content %}
+    <h2>Libros disponibles</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Título</th>
+                <th>Autor</th>
+                <th>Ejemplares</th>
+                <th>Estado</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for libro in libros %}
+                <tr>
+                    <td>{{ libro.titulo }}</td>
+                    <td>{{ libro.autor }}</td>
+                    <td>{{ libro.disponibles }}</td>
+                    <td>
+                        {% if libro.disponibles > 0 %}
+                            <span class="disponible">Disponible</span>
+                        {% else %}
+                            <span class="no-disponible">No disponible</span>
+                        {% endif %}
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

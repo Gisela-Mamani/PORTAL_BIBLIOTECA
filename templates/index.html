@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Inicio - Portal de Biblioteca{% endblock %}
+
+{% block content %}
+    <h1>PORTAL DE BIBLIOTECA </h1>
+
+    {% if ultimo_usuario %}
+        <p>Último usuario registrado: {{ ultimo_usuario }}.</p>
+        <p><a href="{{ url_for('eliminar_cookie') }}">Eliminar cookie de último usuario</a></p>
+    {% else %}
+        <p>Bienvenido al Portal de Biblioteca.</p>
+    {% endif %}
+
+    <p>Utilice el menú de navegación para consultar los libros, iniciar sesión o ver su perfil.</p>
+{% endblock %}
