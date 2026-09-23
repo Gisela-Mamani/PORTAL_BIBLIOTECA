@@ -5,12 +5,12 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    background-color: #f4f6f8;
-    color: #1f2933;
+    background-color: #9e86b3;
+    color: #131414;
 }
 
 header {
-    background-color: #4a2c1c;
+    background-color: #125be200;
     color: #ffffff;
     padding: 1rem 2rem;
 }
@@ -33,7 +33,7 @@ nav a:hover {
 main {
     max-width: 800px;
     margin: 2rem auto;
-    background-color: #ffffff;
+    background-color: #ecdfd2;
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -53,14 +53,14 @@ form label {
 form input {
     padding: 0.5rem;
     margin-top: 0.3rem;
-    border: 1px solid #ccc;
+    border: 1px solid #0e54d4;
     border-radius: 4px;
 }
 
 form button {
     margin-top: 1.5rem;
     padding: 0.6rem;
-    background-color: #4a2c1c;
+    background-color: #16c258;
     color: white;
     border: none;
     border-radius: 4px;
@@ -68,7 +68,7 @@ form button {
 }
 
 form button:hover {
-    background-color: #3a2215;
+    background-color: #0a0a0a;
 }
 
 table {
@@ -78,38 +78,38 @@ table {
 }
 
 th, td {
-    border: 1px solid #ddd;
+    border: 1px solid #136654;
     padding: 0.6rem;
     text-align: left;
 }
 
 th {
-    background-color: #4a2c1c;
-    color: white;
+    background-color: #ac367d;
+    color: rgb(15, 7, 7);
 }
 
 .disponible {
-    color: #1a7a33;
+    color: #b2d80a;
     font-weight: bold;
 }
 
 .no-disponible {
-    color: #b23b3b;
+    color: #09090a;
     font-weight: bold;
 }
 
 .flashes {
     list-style: none;
     padding: 0.8rem 1rem;
-    background-color: #fff3cd;
-    border: 1px solid #ffe08a;
-    border-radius: 4px;
+    background-color: #9ebbb2;
+    border: 1px solid #8a7b52;
+    border-radius: 5px;
     margin-bottom: 1rem;
 }
 
 footer {
     text-align: center;
-    color: #6b7280;
+    color: #e2871f;
     padding: 1rem;
     font-size: 0.9rem;
 }
